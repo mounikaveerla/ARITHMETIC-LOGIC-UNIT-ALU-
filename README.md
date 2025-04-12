@@ -22,3 +22,5 @@ If it isn't, some sort of status will be stored in a permanent place that is som
 
 In the arithmetic unit, multiplication and division are done by a series of adding or subtracting and shifting operations.There are several ways to represent negative numbers. In the logic unit, one of 16 possible logic operations can be performed -- such as comparing two operands and identifying where bits don't match.The design of the ALU is a critical part of the processor and new approaches to speeding up instruction handling are continually being developed.
 
+"output" :
+![Image](https://github.com/user-attachments/assets/d0dcbb54-b613-4a48-a623-82b9f3fda290)
