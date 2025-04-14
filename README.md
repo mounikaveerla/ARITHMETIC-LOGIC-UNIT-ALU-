@@ -21,6 +21,17 @@ The operation code tells the ALU what operation to perform and the operands are 
 
 If it isn't, some sort of status will be stored in a permanent place that is sometimes called the machine status word.In general, the ALU includes storage places for input operands, operands that are being added, the accumulated result (stored in an accumulator) and shifted results. The flow of bits and the operations performed on them in the subunits of the ALU are controlled by gated circuits.The gates in these circuits are controlled by a sequence logic unit that uses a particular algorithm or sequence for each operation code.
 
+Inputs:
+A and B: 16-bit operands
+alu_ctrl: 4-bit control signal to choose operation
+
+Outputs:
+result: 16-bit result of the operation
+zero: 1 if result is 0 (used for branching in processors)
+
+Combinational Logic:
+always @(*) makes it purely combinational (no clock).
+case statement picks operation based on alu_ctrl
 
 In the arithmetic unit, multiplication and division are done by a series of adding or subtracting and shifting operations.There are several ways to represent negative numbers. In the logic unit, one of 16 possible logic operations can be performed -- such as comparing two operands and identifying where bits don't match.The design of the ALU is a critical part of the processor and new approaches to speeding up instruction handling are continually being developed.
 
